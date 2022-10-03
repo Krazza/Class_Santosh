@@ -14,6 +14,8 @@ These values are provided as a city parameter which is an object.
  */
 function getWeather(city) {
 
+    return `Its currently ${city.value} degrees in ${city.name}`;
+
 }
 
 // Sample usage - do not modify

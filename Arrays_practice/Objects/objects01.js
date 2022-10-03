@@ -12,6 +12,12 @@ Give these properties any value you'd like, as long as it fits the expected retu
 
 function getProductDetails() {
 
+    let details = { id: "01", 
+                    title: "hello",
+                    inStock: true,}
+
+    return details;
+
 }
 
 // Sample usage - do not modify

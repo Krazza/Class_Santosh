@@ -11,7 +11,12 @@ it receives exists in the apps parameter, and false otherwise.
  */
 function isAppUsed(apps, app) {
 
-    if(apps.find(item => item == app))
+    // if(apps.find(item => item == app))
+    //     return true;
+    // else 
+    //     return false;
+
+    if(apps.includes(app))
         return true;
     else 
         return false;
