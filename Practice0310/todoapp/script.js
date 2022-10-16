@@ -1,15 +1,9 @@
-// write to-do app
-
-//grab dom elements
 const form = document.querySelector("form");
 const ul = document.querySelector("ul");
 const button = document.querySelector("button");
 const input = document.querySelector("#item");
 
 
-//use local storage to put the items in array
-//use json parse to get items
-//else initialize empty array
 let itemsArray = localStorage.getItem("items");
 if(itemsArray == null)
 {
@@ -40,14 +34,7 @@ form.addEventListener("submit", function(e)
 
 
 data.forEach(item => ListMaker(item));
-// list of items and append to html
 
-// add event listener for the form, submit
-// push the item inside items array
-
-// save it in local storage
-
-// event listener for click bttn
 button.addEventListener("click", function()
 {
     localStorage.clear();

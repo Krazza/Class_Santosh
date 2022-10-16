@@ -3,20 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
     <title> New Todo App </title>
   </head>
   <body>
-    <div class="small-container">
-    <h1> To-do app </h1>
-    <form>
-      <input id="item" type="text" placeholder="New">
-      <input type="submit" />
-    </form>
-    <h2> Items </h2>
-    <ul></ul>
-    
-    <button> clear all </button>
-  </div>
+    <main>
+      <div id="parentFormContainer">
+        <h1> To-do app </h1>
+        <div id="childFormContainer">
+        <form>
+          <input id="item" type="text" placeholder="New item">
+          <input type="submit" value="SUBMIT"/>
+        </form>
+        <button id="clearBttn"> CLEAR ALL </button>
+        </div>
+      </div>
+      <div id="listParentContainer">
+        <h1> Goals </h1>
+        <div id="listChildContainer">
+        <ul></ul>
+        </div>
+      </div>
+    </main>
   <script src="script.js"></script>
 </body>
 </html>
